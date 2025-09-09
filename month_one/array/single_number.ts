@@ -5,7 +5,6 @@ function singleNumber(nums: number[]): number {
   }
   return num;
 }
-// [2,2,1] [1]
 let nums = [4, 1, 2, 1, 2];
 
 console.log(singleNumber(nums));
