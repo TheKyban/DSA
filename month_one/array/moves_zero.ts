@@ -1,3 +1,5 @@
+import { swap } from "./swap";
+
 function moveZeroes(nums: number[]): void {
     let k = nums.length - 1;
     for (let i = nums.length - 1; i >= 0; i--) {
@@ -10,6 +12,21 @@ function moveZeroes(nums: number[]): void {
         }
     }
 }
+
+function moveZeroesOptimal(nums: number[]): void {
+    if (nums.length <= 1) return;
+
+    let count = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] !== 0) {
+            swap(nums, i, count);
+            count++;
+        }
+    }
+}
 const num = [0, 1, 0, 3, 12];
-moveZeroes(num);
-console.log(num); //[ 1, 3, 12, 0, 0 ]
+const num2 = [1, 0];
+// moveZeroes(num);
+// moveZeroesOptimal(num);
+moveZeroesOptimal(num2);
+console.log(num2);
