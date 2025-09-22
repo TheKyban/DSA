@@ -24,8 +24,8 @@ function moveZeroesOptimal(nums: number[]): void {
         }
     }
 }
-const num = [0, 1, 0, 3, 12];
-const num2 = [1, 0];
+const num2 = [1, 2, 0, 1, 1, 0, 6];
+// const num2 = [1, 0];
 // moveZeroes(num);
 // moveZeroesOptimal(num);
 moveZeroesOptimal(num2);
