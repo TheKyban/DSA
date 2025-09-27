@@ -4,7 +4,6 @@ const matrix = [
     [7, 8, 9],
 ];
 
-// output [[1,4,7],[2,5,8],[3,6,9]]
 function transpose(matrix: number[][]): number[][] {
     const cols = matrix[0].length;
     const rows = matrix.length;
